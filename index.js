@@ -50,3 +50,8 @@ document.getElementById("searchInput").addEventListener("keyup", function(event)
     4. Make sure the 'currentName' is lowercase
     5. Log out the 'currentName' so we can see all the names from the loop!
 */
+
+for (let counter = 0; counter < allNamesDOMCollection.length; counter++) {
+    const currentName = allNamesDOMCollection[counter].textContent.lowercase
+    console.log(currentName)
+}
