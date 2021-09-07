@@ -51,5 +51,3 @@ document.getElementById("searchInput").addEventListener("keyup", function(event)
 		console.log(currentName);
 	}
 });
-
-// Test
