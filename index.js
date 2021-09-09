@@ -14,9 +14,9 @@
     - The 'event.target' has another property called 'value', so 'event.target.value' which in the case of our input box, gives us the value the user typed in!
     - Adding the method 'toLowerCase()' will lowercase your value!
 */  
-document.getElementById("usernameInput").addEventListener("keyup", function(event) {
-  let username = event.target.value.toLowerCase();
-})
+// document.getElementById("usernameInput").addEventListener("keyup", function(event) {
+//   let username = event.target.value.toLowerCase();
+// })
 
 /*
     Task: Capture the user's search query
@@ -54,10 +54,10 @@ document.getElementById("usernameInput").addEventListener("keyup", function(even
 */
 document.getElementById("searchInput").addEventListener("keyup", function(event) {
   let searchQuery = event.target.value.toLowerCase();
-	let allNamesDOMCollection = document.getElementsByClassName("name")
+	let allNamesDOMCollection = document.getElementsByClassName("name");
 
 	for (let counter = 0; counter < allNamesDOMCollection.length; counter++) {
-		const currentName = allNamesDOMCollection[counter].textContent.toLocaleLowerCase;
+		const currentName = allNamesDOMCollection[counter].textContent.toLowerCase;
 
 		if (currentName.includes(searchQuery)) {
 			allNamesDOMCollection[counter].style.display = "block";
