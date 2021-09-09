@@ -60,7 +60,7 @@ document.getElementById("searchInput").addEventListener("keyup", function(event)
 		const currentName = allNamesDOMCollection[counter].textContent.toLocaleLowerCase;
 
 		if (currentName.includes(searchQuery)) {
-			allNamesDOMCollection[counter].style.display = block;
+			allNamesDOMCollection[counter].style.display = "block";
 		} else {
 			allNamesDOMCollection[counter].style.display = "none";
 		}
